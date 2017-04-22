@@ -12,7 +12,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="{{ url('/') }}">Home</a></li>
+              <li><a href="{{ url('/') }}">Home</a></li>
             
               <li><a href="{{ url('/about') }}">About</a></li>
               <li><a href="{{ url('/faq') }}">FAQs</a></li>

@@ -27,9 +27,29 @@ Route::get('contact', function () {
     return view('contact');
 });
 
+Route::get('upload', function(){
+	return view('upload');
+});
+
+
+
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('upload', 'upload@upload');   ///upload@upload as in   upload page @ upload controller
+Route::post('store', 'upload@store');   ///upload@upload as in   upload page @ and store form action
+//Route::post('upload', ['as'=>'upload.store','uses'=>'upload@upload']);
+//Route::get('upload', ['as'=>'upload.store','uses'=>'upload@upload']);
+
+
+
+
+//Route::get('/', function(){
+//	return view('insertForm');
+
+//});
+//Route::post('/insert', 'Controller@index');
