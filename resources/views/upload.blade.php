@@ -12,29 +12,9 @@
           <h1 class="page-header">ACADA - upload</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
+                     </div>
 
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">Upload Video</h2>
           <form class="form-horizontal" action="store" method="post">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Video tile</label>
@@ -45,7 +25,7 @@
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">Video Embed Code</label>
     <div class="col-sm-10">
-    Width:350    height:250
+    NOTE: Please change the video width and height to Width:350    height:250  before posting
       <input type="text" name="video_url" class="form-control" id="inputPassword3" placeholder="Video URL">
     </div>
   </div>

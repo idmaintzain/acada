@@ -43,6 +43,9 @@ Route::get('javatutorial', function(){
 	return view('javatutorial');
 });
 
+Route::get('allvideo', function(){
+	return view('allvideo');
+});
 
 
 
