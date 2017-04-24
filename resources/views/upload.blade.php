@@ -45,6 +45,7 @@
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
     <div class="col-sm-10">
+    Width:350    height:250
       <input type="text" name="video_url" class="form-control" id="inputPassword3" placeholder="Video URL">
     </div>
   </div>

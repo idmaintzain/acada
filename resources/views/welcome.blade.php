@@ -1,4 +1,4 @@
-
+<?php // Illuminate\Support\Collection;  ?>
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
  
@@ -34,6 +34,9 @@
             </div>//flexslider-->
 
        <!-- Page Content -->
+       
+
+
     <div class="container">
 
         <div class="row">
@@ -43,9 +46,15 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/cccUdsONu28" frameborder="0" allowfullscreen></iframe>
-                </a>
+                <table border="1" align="center">
+<tr>
+  
+    <td>
+   
+   </td>
+
+
+ </tr></table>
             </div>
           
         </div>
@@ -53,15 +62,34 @@
     </div> <!-- /container -->
 
 
-    <?php
-  
-   $user = DB::table('users')->where('name', 'Idowu Adeyinka')->first();
-
-echo $user->name;
 
 
 
-?>
+
+<div class="bs-example">
+   <div class="container">
+        <div class="row"> <?php  
+ $video = DB::table('video')->get();
+
+   foreach ($video as $vid) {  ?>
+            <div class="col-xs-6" style="width: 33%;">
+                <div class="thumbnail" >
+                 <?php  echo $vid->video_url; ?> 
+                    <div class="caption">
+                        <h3>  <?php  echo $vid->video_title; ?> </h3>
+                        <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula. Cras justo odio, dapibus ac facilisis in quam.</p>
+                        <p><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></p>
+                    </div>
+                </div>
+            </div>
+            <?php }  ?>
+
+        </div>
+    </div>     
+</div>
+
+
+
 
  @include('includes.footer')
   </body>
