@@ -1,8 +1,4 @@
 
-namespace App\Http\Controllers;
-
-use Illuminate\Support\Facades\DB;
-use app\Http\Controllers\Controller;
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
  
@@ -27,7 +23,7 @@ use app\Http\Controllers\Controller;
 
         <!-- ******CONTENT****** --> 
      
-            <div  class="">
+           <!-- <div  class="">
              
                     
                         <img src="slides/slide-1.jpg"  alt="" />
@@ -35,7 +31,7 @@ use app\Http\Controllers\Controller;
                    
                    
               
-            </div><!--//flexslider-->
+            </div>//flexslider-->
 
        <!-- Page Content -->
     <div class="container">
