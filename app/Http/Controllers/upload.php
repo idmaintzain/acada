@@ -8,6 +8,7 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use App\video;
 
+use Auth;
 
 
 class upload extends Controller
@@ -42,6 +43,8 @@ class upload extends Controller
           $user = new video; 
         $user->video_title = Input::get("video_title");
         $user->video_url = Input::get("video_url");
+         $user->category = Input::get("category");
+         $user->posted_by = Auth::user()->name;
         $user->save();
 
         return ("data saved");

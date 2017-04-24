@@ -17,7 +17,14 @@
               <li><a href="{{ url('/about') }}">About</a></li>
               <li><a href="{{ url('/faq') }}">FAQs</a></li>
               <li><a href="{{ url('/contact') }}">Contact Us</a></li>
-              <li class="dropdown">
+
+
+<li><a href="{{ url('/htmltutorial') }}">HTML</a></li>
+              <li><a href="{{ url('/phptutorial') }}">PHP</a></li>
+              <li><a href="{{ url('/javatutorial') }}">JAVA</a></li>
+
+
+            <!--  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
@@ -28,7 +35,7 @@
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
          

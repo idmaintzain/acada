@@ -37,18 +37,32 @@
           <h2 class="sub-header">Section title</h2>
           <form class="form-horizontal" action="store" method="post">
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <label for="inputEmail3" class="col-sm-2 control-label">Video tile</label>
     <div class="col-sm-10">
       <input type="text" name="video_title" class="form-control" id="inputEmail3" placeholder="Video Title">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <label for="inputPassword3" class="col-sm-2 control-label">Video Embed Code</label>
     <div class="col-sm-10">
     Width:350    height:250
       <input type="text" name="video_url" class="form-control" id="inputPassword3" placeholder="Video URL">
     </div>
   </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Category</label>
+    <div class="col-sm-10">
+    <select class="selectpicker" class="form-control" name="category">
+  <option>PHP</option>
+  <option>JAVA</option>
+  <option>HTML</option>
+</select>
+
+    </div>
+  </div>
+
+
   {{csrf_field()}}
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">

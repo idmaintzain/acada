@@ -31,6 +31,17 @@ Route::get('upload', function(){
 	return view('upload');
 });
 
+Route::get('htmltutorial', function(){
+	return view('htmltutorial');
+});
+
+Route::get('phptutorial', function(){
+	return view('phptutorial');
+});
+
+Route::get('javatutorial', function(){
+	return view('javatutorial');
+});
 
 
 

@@ -8,9 +8,6 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use App\video;
 
-
-
-
 class UserController extends Controller
 
 class upload extends Controller
