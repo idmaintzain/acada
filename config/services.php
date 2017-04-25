@@ -35,4 +35,17 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+    'client_id' => '298275077279683',
+    'client_secret' => 'dc850e7eec6194d6d6917c49612b9a5f',
+    'redirect' => 'http://acada.starrfield.com.ng/public/login/facebook/callback',
+],
+
+
+	'google' => [
+        'client_id' => '543120059542-jjn8n7hvsie7pv99p52p66i4d73q1nep.apps.googleusercontent.com',
+        'client_secret' => 'tH5gcSWbuhMBacjpdsyBXcWy',
+        'redirect' => 'http://acada.starrfield.com.ng/public/login/google/callback',
+    ],
+
 ];

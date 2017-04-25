@@ -18,11 +18,11 @@
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
       </div>
-
+ @include('includes.footer')
     </div> <!-- /container -->
 
 
 
- @include('includes.footer')
+
   </body>
 </html>

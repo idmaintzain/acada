@@ -1,11 +1,25 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Auth;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Socialite;
+//use Illuminate\Http\Request;
+
+
+
+
+
+
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+//use Auth;
+//use Exception;
+
+
 
 class RegisterController extends Controller
 {
@@ -68,5 +82,77 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+
+
+
+
+
+
+
+     /**
+     * Redirect the user to the GitHub authentication page.
+     *
+     * @return Response
+     */
+    public function redirectToProvider()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @return Response
+     */
+   public function handleProviderCallback(User $user)
+    {
+    $money =  Socialite::driver('facebook')->user();
+     
+        if(User::where('email', '=', $money->email)->first()){
+        $checkUser = User::where('email', '=', $money->email)->first();
+        Auth::login($checkUser);
+        return Socialite::driver('facebook')->redirect();
+        return redirect('/');
+        
+         } 
+
+        $user->provider_id = $money->getId();
+        $user->name = $money->getName();
+        $user->email = $money->getEmail();
+     //   $user->avatar = $money->getAvatar();
+        $user->save();
+    
+        Auth::login($user);
+        return redirect('/home');
+        
+         
+    }
+    
+    
+    
+    
+    
+    
+    public function redirectToGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+   public function handleGoogleCallback()
+    {
+        try {
+            $user = Socialite::driver('google')->user();
+            
+            $userModel = new User;
+            $createdUser = $userModel->addNew($userModel);
+            Auth::loginUsingId($createdUser->id);
+            return redirect()->route('home');
+        } catch (Exception $e) {
+            return redirect('auth/facebook');
+        }
+    
+       
     }
 }

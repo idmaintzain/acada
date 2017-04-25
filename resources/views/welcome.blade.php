@@ -14,7 +14,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron" style="    background-color: #aaa;">
         <h1>WELCOME TO ACADA</h1>
-        <p>ACADA is an open source community built with PHP using Laravel, it allows developers share links of helpful videos.
+        <p>ACADA is an open source community built with PHP using Laravel, it allows developers share links of helpful videos2222.
 </p>
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Read More &raquo;</a>
@@ -155,7 +155,7 @@
 
         </div>
     </div>     
-</div>
+
 
 
 

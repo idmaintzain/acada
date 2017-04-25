@@ -67,3 +67,13 @@ Route::post('store', 'upload@store');   ///upload@upload as in   upload page @ a
 
 //});
 //Route::post('/insert', 'Controller@index');
+
+
+Route::get('login/facebook', 'Auth\RegisterController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
+
+//Route::get('google', function () {
+  //  return view('googleAuth');
+//});
+Route::get('login/google', 'Auth\RegisterController@redirectToGoogle');
+Route::get('login/google/callback', 'Auth\RegisterController@handleGoogleCallback');
