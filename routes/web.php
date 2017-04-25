@@ -70,6 +70,7 @@ Route::post('store', 'upload@store');   ///upload@upload as in   upload page @ a
 
 
 Route::get('login/facebook', 'Auth\RegisterController@redirectToProvider');
+<<<<<<< HEAD
 Route::get('login/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
 
 //Route::get('google', function () {
@@ -77,3 +78,6 @@ Route::get('login/facebook/callback', 'Auth\RegisterController@handleProviderCal
 //});
 Route::get('login/google', 'Auth\RegisterController@redirectToGoogle');
 Route::get('login/google/callback', 'Auth\RegisterController@handleGoogleCallback');
+=======
+Route::get('login/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
+>>>>>>> 3880f96ba8a4143cbd03f1a8fe186c2d59a98b20

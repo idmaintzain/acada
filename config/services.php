@@ -38,6 +38,7 @@ return [
     'facebook' => [
     'client_id' => '298275077279683',
     'client_secret' => 'dc850e7eec6194d6d6917c49612b9a5f',
+<<<<<<< HEAD
     'redirect' => 'http://acada.starrfield.com.ng/public/login/facebook/callback',
 ],
 
@@ -48,4 +49,9 @@ return [
         'redirect' => 'http://acada.starrfield.com.ng/public/login/google/callback',
     ],
 
+=======
+    'redirect' => 'http://localhost:8000/login/facebook/callback',
+],
+
+>>>>>>> 3880f96ba8a4143cbd03f1a8fe186c2d59a98b20
 ];

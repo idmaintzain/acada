@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Socialite;
+<<<<<<< HEAD
 //use Illuminate\Http\Request;
 
 
@@ -19,6 +20,8 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 //use Auth;
 //use Exception;
 
+=======
+>>>>>>> 3880f96ba8a4143cbd03f1a8fe186c2d59a98b20
 
 
 class RegisterController extends Controller
@@ -106,6 +109,7 @@ class RegisterController extends Controller
      *
      * @return Response
      */
+<<<<<<< HEAD
    public function handleProviderCallback(User $user)
     {
     $money =  Socialite::driver('facebook')->user();
@@ -154,5 +158,14 @@ class RegisterController extends Controller
         }
     
        
+=======
+    public function handleProviderCallback()
+    {
+        $user = Socialite::driver('facebook')->user();
+
+        // $user->token;
+
+        return $user->getEmail();
+>>>>>>> 3880f96ba8a4143cbd03f1a8fe186c2d59a98b20
     }
 }
