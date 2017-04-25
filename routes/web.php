@@ -67,3 +67,7 @@ Route::post('store', 'upload@store');   ///upload@upload as in   upload page @ a
 
 //});
 //Route::post('/insert', 'Controller@index');
+
+
+Route::get('login/facebook', 'Auth\RegisterController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
